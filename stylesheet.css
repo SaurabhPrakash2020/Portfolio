@@ -498,10 +498,18 @@ body {
   color: #000;
   box-shadow: 0 0 20px #0ef;
 }
-.contact-form form {
+.container2 {
+  position: relative;
+  /* You can adjust these values as needed */
+  left: 120%;
+  bottom: 0;
+}
+
+.contact-form {
   position: absolute;
-  left: 60%;
-  bottom: -425%;
+  /* Adjust these values to position your form where you want it within the container */
+  left: 0;
+  bottom: 0;
 }
 .contact-form form input,
 form textarea {
@@ -602,4 +610,114 @@ form textarea {
   font-size: 20px;
   padding: 10px;
   border-radius: 0.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    /* Adjust header styles for small screens */
+    padding: 20px 5%;
+  }
+
+  .navbar a {
+    /* Adjust navigation links for small screens */
+    font-size: 20px;
+    margin-left: 20px; /* Reduce margin */
+  }
+
+  /* Responsive styles for the "Home" section (already provided) */
+
+  /* Responsive styles for the "About" section */
+  .about-text h2 {
+    font-size: 36px; /* Example: Reduce font size for section title */
+  }
+
+  .about-text h4 {
+    font-size: 18px; /* Example: Reduce font size for section subtitle */
+  }
+
+  .about-text p {
+    font-size: 16px; /* Example: Reduce font size for section content */
+  }
+
+  /* Responsive styles for the "Contact" section */
+  .contact-text h2 {
+    font-size: 36px; /* Example: Reduce font size for section title */
+  }
+
+  .contact-text h4 {
+    font-size: 18px; /* Example: Reduce font size for section subtitle */
+  }
+
+  .contact-text p {
+    font-size: 16px; /* Example: Reduce font size for section content */
+  }
+  .sub-title {
+    text-align: center;
+    font-size: 30px; /* Adjust font size for section title */
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .container {
+    padding: 30px; /* Adjust padding for the container */
+  }
+
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
+    grid-gap: 20px; /* Adjust gap between service items */
+  }
+
+  .services-list div {
+    /* Adjust styles for individual service items */
+    background-color: transparent;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .services-list div i {
+    font-size: 40px; /* Adjust font size for service icons */
+    margin-bottom: 20px;
+  }
+
+  .services-list div h2 {
+    font-size: 24px; /* Adjust font size for service titles */
+    margin-bottom: 10px;
+  }
+
+  .services-list div a {
+    font-size: 14px; /* Adjust font size for "Learn More" links */
+    margin-top: 15px;
+  }
+  .skills {
+    /* Adjust section styles as needed */
+    padding: 30px 5%; /* Example: Adjust padding */
+  }
+
+  .sub-title h2 {
+    /* Adjust font size for section title */
+    font-size: 24px;
+  }
+
+  .container1 {
+    /* Adjust container styles as needed */
+    padding: 10px;
+  }
+
+  .heading1 {
+    /* Adjust font size for section heading */
+    font-size: 36px;
+  }
+
+  .bar {
+    /* Adjust styles for individual skill bars */
+    margin-top: 20px; /* Example: Adjust margin */
+  }
+
+  .bar .info span {
+    /* Adjust font size for skill names */
+    font-size: 16px;
+  }
 }
